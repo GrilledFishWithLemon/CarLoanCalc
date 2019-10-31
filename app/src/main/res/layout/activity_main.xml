@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTxtCarPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/CarPrice"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editTxtDownP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/DownPayment"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editTxtLoanPeriod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/LoanPeriod"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editTxtInterestRate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/InterestRate"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/txtCarLoan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/CarLoan"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/txtInterest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Interest"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/txtMonthlyP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/MonthlyPayment"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="resetInput"
+        android:layout_weight="1"
+        android:text="@string/Reset" />
+
+    <Button
+        android:id="@+id/btnCalc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/Calc" />
+
+</LinearLayout>
